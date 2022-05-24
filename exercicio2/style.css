@@ -1,0 +1,86 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Div da parte superior */
+.container1{
+    width:80%;
+   
+    margin-top:20px;
+    display: flex;
+}
+.container1 img{
+    width:50%;  
+}
+.content1{
+    width:50%;
+    background-color: rgb(10, 1, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 .text{
+    width:75%;
+}
+.text .p1, h1, .p2, table, .creditos{
+    margin:20px 0px; 
+}
+.p1{
+    color:rgba(4, 167, 167, 0.623)
+}
+h1{
+    color:white
+}
+.p2, a{
+    color:#bbb;
+}
+table{
+    width:100%;
+    padding:10px;
+    margin-top:40px;
+}
+th{
+    text-align: left;
+    padding:10px 0px;
+    font-size:10px;
+    color:rgba(163, 162, 162, 0.719)
+}
+td{
+    padding: 5px 0px;
+}
+.creditos{
+    font-size:10px;
+    color:rgba(163, 162, 162, 0.719);
+}
+
+/* Parte inferior */
+
+.container2{
+    width:80%;
+    height:50vh;
+    margin-bottom:20px;
+    display: flex;
+}
+.container2 img{
+    width:50%;  
+}
+.content2{
+    width:50%;
+    background-color: rgb(105, 4, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content2 .text{
+    width:75%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bandas:</h1>
+    <ul id="bandas">
+        <li id="banda1"></li>
+        <li id="banda2"></li>
+        <li id="banda3"></li>
+        <li id="banda4"></li>
+        <li id="banda5"></li>
+
+    </ul>
+    <script>
+        
+        const response = fetch('http://LocalHost:4000/bandas')
+        response.then((response1) => {
+            let response2 = response1.json()
+            response2.then(response3 =>{
+                document.getElementById('banda1').innerHTML = response3[0].banda
+                document.getElementById('banda2').innerHTML = response3[1].banda
+                document.getElementById('banda3').innerHTML = response3[2].banda
+                document.getElementById('banda4').innerHTML = response3[3].banda
+                document.getElementById('banda5').innerHTML = response3[4].banda
+            })
+            .catch(erro =>{console.log(erro)})
+        })
+        .catch(error => {console.log(error)})
+    </script>
+</body>
+</html>

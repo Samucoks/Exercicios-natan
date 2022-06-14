@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Utilizando uma API</title>
+
+</head>    
+<body>
+    <h1>Burcar CEP</h1>
+    <input type="number" id="cep" placeholder="Insira seu CEP" maxlength="8">
+    <input type="submit" id="botao" value="BUSCAR" onclick="buscarCep()">
+    <div class="dados">
+        <table>
+            <tr>
+                <th>Rua:</th>
+                <th>Bairro:</th>
+                <th>Cidade:</th>
+                <th>Estado:</th>
+            </tr>
+            <tr>
+                <td id="rua">Nome da Rua</td>
+                <td id="bairro">Nome do Bairro</td>
+                <td id="cidade">Nome da Cidade</td>
+                <td id="estado">Nome do Estado</td>
+
+            </tr>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercício 4</title>
+
+</head>    
+<body>
+    <section class="container">
+        <h1>Cadastro</h1>
+        <div class="form">
+            <input type="text" id="nome" value="" placeholder="Nome"><br>
+            <input type="email" id="email" value="" placeholder="E-mail"><br>
+            <input type="password" id="senha" value="" placeholder="Senha"><br>
+            <input type="number"  id="cpf" value="" placeholder="CPF"><br>
+            <input type="number"  id="cep" value="" placeholder="CEP"><br>
+            <input type="text" id="rua" value="" placeholder="Rua"><br>
+            <input type="text" id="bairro" value="" placeholder="Bairro"><br>
+            <input type="text" id="cidade" value="" placeholder="Cidade"><br>
+            <select name="estado" id="estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+            <input type="submit" id="botao" value="Enviar" onclick='enviar()'>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

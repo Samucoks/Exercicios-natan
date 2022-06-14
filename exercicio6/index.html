@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Utilizando API/2</title>
+
+
+</head>    
+<body>
+    <h1>Relação entre moedas</h1>
+    <hr>
+    <div class="alinhar">
+        <div class="container">
+            <div class="content1">
+                <label for="moeda"><h3>Moeda Base:</h3></label><br>
+                <select name="moeda" id="moeda">
+                    <option value="BRL" selected>Real Brasileiro</option>
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dolar</option>
+                </select>
+            </div>
+            <div class="content2">
+                <label for="moeda2"><h3>Moeda Relacionada:</h3></label><br>
+                <select name="moeda2" id="moeda2">
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="EUR" selected>Euro</option>
+                    <option value="USD">Dolar</option>
+                </select><br>
+            </div>
+        </div>
+    </div>
+    <div class="alinhar"><input type="submit" value="Conferir" onclick="conferir()"></div>
+    <ul>
+        <li>RELAÇÃO:    <span id="name"> NAME</span></li>
+        <li>ALTA:  <span id="high">HIGH</span></li>
+        <li>BAIXA:  <span id="low">LOW</span></li>
+        <li>BASE:  <span id="code">CODE</span></li>
+        <li>RELACIONADA: <span id="codein">CODEIN</span></li>
+        <li>DATA ANALISE: <span id="createDate">CREATE DATE</span></li>
+        <li>VARIAÇÃO DO BID: <span id="varBid">VAR BID</span></li>
+        <li>BID: <span id="bid">BID</span></li>
+        <li>ASK: <span id="ask">ASK</span></li>
+    </ul>  
+    <script src="./script.js"></script>
+</body>
+</html>
